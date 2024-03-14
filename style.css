@@ -6,6 +6,7 @@
 }
 
 body{
+    margin: 100px;
     background: #8200ff;
 background: linear-gradient(43deg, #8200ff 21%, #3d27a8 52%, rgba(0,0,0,1) 86%);
 }
@@ -45,4 +46,50 @@ footer{
     text-align: center;
     font-size: 20px;
     font-family: pixel;
+}
+
+@media (max-width: 70px) {
+    
+    body{
+        background: #8200ff;
+    background: linear-gradient(43deg, #8200ff 21%, #3d27a8 52%, rgba(0,0,0,1) 86%);
+    }
+
+    h1{ 
+        text-align: center;
+        font-size: 65px;
+        font-family: pixel;
+        color: #8c2be6;
+    }
+    
+    .board{
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 150px);
+        gap: 2px;
+        justify-content: center;
+    }
+    
+    .cell {
+        background: #8b5ac0;
+    background: radial-gradient(circle, #853bd4 13%, #6806c4 55%);
+        color: #000000;
+        margin: 10px;
+        padding: 50px;
+        border: 2px double #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 64px;
+        cursor: pointer;
+        font-family: pixel;
+        border-radius: 10px;
+    }
+    
+    footer{
+        text-align: center;
+        font-size: 20px;
+        font-family: pixel;
+    }
+
 }
